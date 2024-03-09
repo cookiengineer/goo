@@ -1,0 +1,55 @@
+
+fieldset select {
+	display: inline-block;
+	width: auto;
+	height: 32px;
+	margin: 0px;
+	padding: 0px 8px;
+	font: var(--input-font);
+	color: var(--input-text);
+	background: var(--input-background);
+	border: 1px solid var(--input-border);
+	border-radius: 4px;
+	box-sizing: border-box;
+	transition: 250ms all ease-out;
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: pointer;
+}
+
+fieldset select:focus,
+fieldset select:hover {
+	/* color: var(--input-focus-text); */
+	/* background: var(--input-focus-background); */
+	border-color: var(--input-focus-border);
+	transition: 250ms all ease-out;
+}
+
+fieldset select[disabled],
+fieldset select[disabled]:focus,
+fieldset select[disabled]:hover,
+fieldset select[disabled]:invalid {
+	color: var(--input-disabled-text) !important;
+	background: var(--input-disabled-background) !important;
+	border-color: var(--input-disabled-border) !important;
+	transition: 250ms all ease-out;
+	user-select: none;
+	cursor: not-allowed;
+}
+
+fieldset select option {
+	margin: 0px;
+	padding: 0px;
+	font: var(--select-font);
+	color: var(--select-text);
+	background: var(--select-background);
+}
+
+fieldset select option:focus,
+fieldset select option:hover {
+	color: var(--input-focus-text);
+	background: var(--input-focus-background);
+	border-color: var(--input-focus-border);
+}
+

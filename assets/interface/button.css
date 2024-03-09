@@ -1,0 +1,130 @@
+
+fieldset button,
+header button,
+footer button,
+aside button {
+	display: inline-block;
+	width: auto;
+	height: 32px;
+	margin: 0px;
+	padding: 0px 8px;
+	font: var(--button-font);
+	color: var(--button-text);
+	background: var(--button-background);
+	border: 1px solid var(--button-border);
+	border-radius: 4px;
+	box-sizing: border-box;
+	transition: 250ms all ease-out;
+	cursor: default;
+	outline: none;
+}
+
+fieldset button:focus,
+fieldset button:hover,
+header button:focus,
+header button:hover,
+footer button:focus,
+footer button:hover,
+aside button:focus,
+aside button:hover {
+	color: var(--button-focus-text);
+	background: var(--button-focus-background);
+	border-color: var(--button-focus-border);
+	transition: 250ms all ease-out;
+	cursor: pointer;
+}
+
+fieldset button:active,
+header button:active,
+footer button:active,
+aside button:active {
+	color: var(--button-active-text);
+	background: var(--button-active-background);
+	border-color: var(--button-active-border);
+	transition: 250ms all ease-out;
+	cursor: pointer;
+}
+
+header button:first-of-type,
+footer button:first-of-type,
+aside button:first-of-type {
+	color: var(--button-text);
+	background: var(--button-background);
+	border-color: var(--button-border);
+	transition: 250ms all ease-out;
+}
+
+header button:first-of-type:focus,
+header button:first-of-type:hover,
+footer button:first-of-type:focus,
+footer button:first-of-type:hover,
+aside button:first-of-type:focus,
+aside button:first-of-type:hover {
+	color: var(--button-focus-text);
+	background: var(--button-focus-background);
+	border-color: var(--button-focus-border);
+	transition: 250ms all ease-out;
+	cursor: pointer;
+}
+
+header button:first-of-type:active,
+footer button:first-of-type:active,
+aside button:first-of-type:active {
+	color: var(--button-active-text);
+	background: var(--button-active-background);
+	border-color: var(--button-active-border);
+	transition: 250ms all ease-out;
+}
+
+footer button:last-of-type,
+aside button:last-of-type {
+	color: var(--button-primary-text);
+	background: var(--button-primary-background);
+	border-color: var(--button-primary-border);
+	transition: 250ms all ease-out;
+}
+
+footer button:last-of-type:focus,
+footer button:last-of-type:hover,
+aside button:last-of-type:focus,
+aside button:last-of-type:hover {
+	color: var(--button-primary-focus-text);
+	background: var(--button-primary-focus-background);
+	border-color: var(--button-primary-focus-border);
+	transition: 250ms all ease-out;
+}
+
+footer button:last-of-type:active,
+aside button:last-of-type:active {
+	color: var(--button-primary-active-text);
+	background: var(--button-primary-active-background);
+	border-color: var(--button-primary-active-border);
+	transition: 250ms all ease-out;
+}
+
+header button[disabled],
+footer button[disabled],
+aside button[disabled],
+header button[disabled]:focus,
+footer button[disabled]:focus,
+aside button[disabled]:focus,
+header button[disabled]:hover
+footer button[disabled]:hover
+aside button[disabled]:hover,
+header button[disabled]:first-of-type,
+footer button[disabled]:first-of-type,
+aside button[disabled]:first-of-type,
+header button[disabled]:first-of-type:focus,
+footer button[disabled]:first-of-type:focus,
+aside button[disabled]:first-of-type:focus,
+header button[disabled]:first-of-type:hover
+footer button[disabled]:first-of-type:hover
+aside button[disabled]:first-of-type:hover {
+	color: var(--button-disabled-text) !important;
+	background: var(--button-disabled-background) !important;
+	border-color: var(--button-disabled-border) !important;
+	transition: 250ms all ease-out;
+	user-select: none;
+	cursor: not-allowed;
+}
+

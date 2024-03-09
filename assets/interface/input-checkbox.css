@@ -1,0 +1,48 @@
+
+fieldset input[type="checkbox"] {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin: 0px;
+	padding: 0px 8px;
+	font: var(--input-font);
+	color: var(--input-text);
+	background: var(--input-background);
+	vertical-align: top;
+	border: 1px solid var(--input-border);
+	border-radius: 4px;
+	box-sizing: border-box;
+	transition: 250ms all ease-out;
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: pointer;
+}
+
+fieldset input[type="checkbox"]:checked {
+	color: var(--button-active-text);
+	background: var(--button-active-background);
+	border-color: var(--button-active-border);
+}
+
+fieldset input[type="checkbox"][disabled],
+fieldset input[type="checkbox"][disabled]:checked {
+	color: var(--input-disabled-text) !important;
+	background: var(--input-disabled-background) !important;
+	border-color: var(--input-disabled-border) !important;
+	transition: 250ms all ease-out;
+	cursor: not-allowed;
+}
+
+fieldset input[type="checkbox"]:checked:before,
+fieldset input[type="checkbox"][disabled]:checked:before {
+	display: block;
+	content: 'X';
+	font: var(--select-font);
+	font-size: 20px;
+	color: var(--select-text);
+	background: var(--select-background);
+	text-align: center;
+	vertical-align: middle;
+}
+

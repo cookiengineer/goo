@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Goo.js Basic App Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- App Interface and Layout -->
+		<link rel="stylesheet" href="./goo/app-default.css">
+		<script defer src="./goo/app-default.js"></script>
+
+		<!-- App Custom Design -->
+		<link rel="stylesheet" href="./index.css">
+	</head>
+	<body data-layout="app" data-theme="default">
+		<main>
+			<section data-view="main" class="active">
+				<header>
+					<button data-view="settings">Settings</button>
+					<b>Hello World App</b>
+					&nbsp;
+				</header>
+				<aside>
+					This is the sidebar
+				</aside>
+				<section>
+					<article>
+						<h3>Headline</h3>
+						<p>
+							This is the content of the main view.
+						</p>
+					</article>
+				</section>
+			</section>
+			<section data-view="settings">
+				<header>
+					<button data-view="main">Back</button>
+					<b>Settings</b>
+					&nbsp;
+				</header>
+				<section>
+					<article>
+						<form enctype="application/json" method="POST" action="/api/user/save" data-struct="User">
+							<fieldset>
+								<div>
+									<label for="user-name">Username</label>
+									<input id="user-name" data-name="name" type="text" placeholder="Cookie Monster" pattern="^[A-Za-z ]{3,}$" required>
+								</div>
+								<div>
+									<label for="user-birthday">Birthday</label>
+									<input id="user-birthday" data-name="birthday" type="date">
+								</div>
+								<div>
+									<label for="user-role">Role</label>
+									<select id="user-role" data-name="role">
+										<option value="admin">admin</option>
+										<option value="analyst">analyst</option>
+										<option value="scientist">scientist</option>
+									</select>
+								</div>
+								<div>
+									<label for="user-workdays">Workdays</label>
+									<ul id="user-workdays">
+										<li>
+											<input id="user-workdays-monday" data-name="workdays" type="checkbox" value="Monday">
+											<label for="user-workdays-monday" title="Monday">Mon</label>
+										</li>
+										<li>
+											<input id="user-workdays-tuesday" data-name="workdays" type="checkbox" value="Tuesday">
+											<label for="user-workdays-tuesday" title="Tuesday">Tue</label>
+										</li>
+										<li>
+											<input id="user-workdays-wednesday" data-name="workdays" type="checkbox" value="Wednesday">
+											<label for="user-workdays-wednesday" title="Wednesday">Wed</label>
+										</li>
+										<li>
+											<input id="user-workdays-thursday" data-name="workdays" type="checkbox" value="Thursday">
+											<label for="user-workdays-thursday" title="Thursday">Thu</label>
+										</li>
+										<li>
+											<input id="user-workdays-friday" data-name="workdays" type="checkbox" value="Friday">
+											<label for="user-workdays-friday" title="Friday">Fri</label>
+										</li>
+										<li>
+											<input id="user-workdays-saturday" data-name="workdays" type="checkbox" value="Saturday">
+											<label for="user-workdays-saturday" title="Saturday">Sat</label>
+										</li>
+										<li>
+											<input id="user-workdays-sunday" data-name="workdays" type="checkbox" value="Sunday">
+											<label for="user-workdays-sunday" title="Sunday">Sun</label>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<label for="user-description">Description</label>
+									<textarea id="user-description"></textarea>
+								</div>
+							</fieldset>
+						</form>
+					</article>
+				</section>
+				<footer>
+					<button data-action="cancel">Cancel</button>
+					<button data-action="save">Save</button>
+				</footer>
+			</section>
+		</main>
+		<script defer src="index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+
+header input[type="text"],
+footer input[type="text"],
+fieldset input[type="text"] {
+	display: inline-block;
+	width: auto;
+	height: 32px;
+	margin: 0px;
+	padding: 0px 8px;
+	font: var(--input-font);
+	color: var(--input-text);
+	background: var(--input-background);
+	border: 1px solid var(--input-border);
+	border-radius: 4px;
+	box-sizing: border-box;
+	transition: 250ms all ease-out;
+	outline: none;
+	cursor: text;
+}
+
+header input[type="text"]:focus,
+header input[type="text"]:hover,
+footer input[type="text"]:focus,
+footer input[type="text"]:hover,
+fieldset input[type="text"]:focus,
+fieldset input[type="text"]:hover {
+	color: var(--input-focus-text);
+	background: var(--input-focus-background);
+	border-color: var(--input-focus-border);
+	transition: 250ms all ease-out;
+}
+
+header input[type="text"]::selection,
+footer input[type="text"]::selection,
+fieldset input[type="text"]::selection {
+	color: var(--input-select-text);
+	background: var(--input-select-background);
+	border-color: var(--input-select-border);
+	transition: 250ms all ease-out;
+}
+
+header input[type="text"]:invalid,
+footer input[type="text"]:invalid,
+fieldset input[type="text"]:invalid {
+	color: var(--input-invalid-text);
+	background: var(--input-invalid-background);
+	border-color: var(--input-invalid-border);
+	transition: 250ms all ease-out;
+}
+
+header input[type="text"]:invalid::placeholder,
+footer input[type="text"]:invalid::placeholder,
+fieldset input[type="text"]:invalid::placeholder {
+	color: var(--input-invalid-text);
+}
+
+header input[type="text"][disabled],
+header input[type="text"][disabled]:focus,
+header input[type="text"][disabled]:hover,
+header input[type="text"][disabled]:invalid,
+footer input[type="text"][disabled],
+footer input[type="text"][disabled]:focus,
+footer input[type="text"][disabled]:hover,
+footer input[type="text"][disabled]:invalid,
+fieldset input[type="text"][disabled],
+fieldset input[type="text"][disabled]:focus,
+fieldset input[type="text"][disabled]:hover,
+fieldset input[type="text"][disabled]:invalid {
+	color: var(--input-disabled-text) !important;
+	background: var(--input-disabled-background) !important;
+	border-color: var(--input-disabled-border) !important;
+	transition: 250ms all ease-out;
+	user-select: none;
+	cursor: not-allowed;
+}
+

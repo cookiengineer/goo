@@ -1,0 +1,57 @@
+
+fieldset textarea {
+	display: inline-block;
+	width: auto;
+	height: 128px;
+	margin: 0px;
+	padding: 0px 8px;
+	font: var(--input-font);
+	color: var(--input-text);
+	background: var(--input-background);
+	line-height: 32px;
+	border: 1px solid var(--input-border);
+	border-radius: 4px;
+	box-sizing: border-box;
+	transition: 250ms all ease-out;
+	outline: none;
+	cursor: text;
+}
+
+fieldset textarea:focus,
+fieldset textarea:hover {
+	color: var(--input-focus-text);
+	background: var(--input-focus-background);
+	border-color: var(--input-focus-border);
+	transition: 250ms all ease-out;
+}
+
+fieldset textarea::selection {
+	color: var(--input-select-text);
+	background: var(--input-select-background);
+	border-color: var(--input-select-border);
+	transition: 250ms all ease-out;
+}
+
+fieldset textarea:invalid {
+	color: var(--input-invalid-text);
+	background: var(--input-invalid-background);
+	border-color: var(--input-invalid-border);
+	transition: 250ms all ease-out;
+}
+
+fieldset textarea:invalid::placeholder {
+	color: var(--input-invalid-text);
+}
+
+fieldset textarea[disabled],
+fieldset textarea[disabled]:focus,
+fieldset textarea[disabled]:hover,
+fieldset textarea[disabled]:invalid {
+	color: var(--input-disabled-text) !important;
+	background: var(--input-disabled-background) !important;
+	border-color: var(--input-disabled-border) !important;
+	transition: 250ms all ease-out;
+	user-select: none;
+	cursor: not-allowed;
+}
+

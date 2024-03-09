@@ -1,0 +1,76 @@
+
+main > section > section > article {
+	display: block;
+	width: 640px;
+	height: auto;
+	margin: 32px auto;
+	padding: 16px;
+	border: 1px solid var(--default-border);
+}
+
+main > section > section > article h3 {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font: var(--default-font);
+	font-size: 32px;
+	line-height: 48px;
+}
+
+main > section[data-view="settings"] > section > article fieldset {
+	border: 0px solid transparent;
+}
+
+fieldset {
+	width: 640px;
+	margin: 0px auto;
+}
+
+fieldset div {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+fieldset label[for] {
+	display: inline-block;
+	width: 128px;
+	height: 32px;
+	line-height: 30px;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'cantarell';
+	font-size: 16px;
+	font-weight: normal;
+	text-align: left;
+	text-overflow: ellipsis;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+fieldset ul {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+
+fieldset ul li {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+fieldset ul li label[for] {
+	width: auto;
+}
+
+fieldset textarea {
+	display: block;
+	width: 100%;
+	height: 15em;
+}

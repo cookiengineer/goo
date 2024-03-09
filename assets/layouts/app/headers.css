@@ -1,0 +1,55 @@
+
+body[data-layout="app"] > main > section > header {
+	transition: 250ms transform ease-out;
+	transform: translate(0%, -100%);
+}
+
+body[data-layout="app"] > main > section.active > header {
+	transition: 250ms transform ease-out;
+	transform: translate(0%, 0%);
+}
+
+body[data-layout="app"] > main > section.inactive > header {
+	transition: 250ms transform ease-out;
+	transform: translate(0%, -100%);
+}
+
+body[data-layout="app"] > main > section > header {
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	width: auto;
+	height: auto;
+	margin: 0px;
+	padding: 8px;
+	top: 0px;
+	right: 0px;
+	bottom: auto;
+	left: 0px;
+	text-align: center;
+	vertical-align: middle;
+	font: var(--menu-font);
+	color: var(--menu-text);
+	background: var(--menu-background);
+	border: 0px solid transparent;
+	border-bottom: 2px solid var(--menu-border);
+	border-radius: 0px;
+	user-select: none;
+	-webkit-user-select: none;
+	-webkit-app-region: drag;
+}
+
+body[data-layout="app"] > main > section > header b {
+	display: inline-block;
+	width: auto;
+	height: 32px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	color: var(--default-text);
+	font: var(--menu-font);
+}
+
+body[data-layout="app"] > main > section > header * {
+	-webkit-app-region: no-drag;
+}

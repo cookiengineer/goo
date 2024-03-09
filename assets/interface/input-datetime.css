@@ -1,0 +1,60 @@
+
+fieldset input[type="date"],
+fieldset input[type="time"] {
+	display: inline-block;
+	width: auto;
+	height: 32px;
+	margin: 0px;
+	padding: 0px 8px;
+	font: var(--input-font);
+	color: var(--input-text);
+	background: var(--input-background);
+	border: 1px solid var(--input-border);
+	border-radius: 4px;
+	box-sizing: border-box;
+	transition: 250ms all ease-out;
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: text;
+}
+
+fieldset input[type="date"]:focus,
+fieldset input[type="date"]:hover,
+fieldset input[type="time"]:focus,
+fieldset input[type="time"]:hover {
+	color: var(--input-focus-text);
+	background: var(--input-focus-background);
+	border-color: var(--input-focus-border);
+	transition: 250ms all ease-out;
+}
+
+fieldset input[type="date"]:invalid,
+fieldset input[type="time"]:invalid {
+	color: var(--input-invalid-text);
+	background: var(--input-invalid-background);
+	border-color: var(--input-invalid-border);
+	transition: 250ms all ease-out;
+}
+
+fieldset input[type="date"]:invalid::placeholder,
+fieldset input[type="time"]:invalid::placeholder {
+	color: var(--input-invalid-text);
+}
+
+fieldset input[type="date"][disabled],
+fieldset input[type="date"][disabled]:focus,
+fieldset input[type="date"][disabled]:hover,
+fieldset input[type="date"][disabled]:invalid,
+fieldset input[type="time"][disabled],
+fieldset input[type="time"][disabled]:focus,
+fieldset input[type="time"][disabled]:hover,
+fieldset input[type="time"][disabled]:invalid {
+	color: var(--input-disabled-text) !important;
+	background: var(--input-disabled-background) !important;
+	border-color: var(--input-disabled-border) !important;
+	transition: 250ms all ease-out;
+	user-select: none;
+	cursor: not-allowed;
+}
+

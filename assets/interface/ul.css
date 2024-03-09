@@ -1,0 +1,80 @@
+
+main > section > dialog > header ul,
+main > section > dialog > footer ul,
+main > section > header ul,
+main > section > footer ul {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	-webkit-app-region: no-drag;
+}
+
+main > section > dialog > header ul li,
+main > section > dialog > footer ul li,
+main > section > header ul li,
+main > section > footer ul li {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px 8px;
+	height: 32px;
+	font: var(--button-font);
+	color: var(--button-text);
+	background: var(--button-background);
+	border-top: 1px solid var(--button-border);
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid var(--button-border);
+	border-left: 1px solid transparent;
+	border-radius: 0px;
+	box-sizing: border-box;
+	transition: 250ms all ease-out;
+	cursor: pointer;
+}
+
+main > section > dialog > header ul li:hover,
+main > section > dialog > footer ul li:hover,
+main > section > header ul li:hover,
+main > section > footer ul li:hover {
+	color: var(--button-focus-text);
+	background: var(--button-focus-background);
+	border-color: var(--button-focus-border);
+}
+
+main > section > dialog > header ul li:first-of-type,
+main > section > dialog > footer ul li:first-of-type,
+main > section > header ul li:first-of-type,
+main > section > footer ul li:first-of-type {
+	border-top: 1px solid var(--button-border);
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid var(--button-border);
+	border-left: 1px solid var(--button-border);
+	border-radius: 4px 0px 0px 4px;
+}
+
+main > section > dialog > header ul li:last-of-type,
+main > section > dialog > footer ul li:last-of-type,
+main > section > header ul li:last-of-type,
+main > section > footer ul li:last-of-type {
+	border-top: 1px solid var(--button-border);
+	border-right: 1px solid var(--button-border);
+	border-bottom: 1px solid var(--button-border);
+	border-left: 1px solid transparent;
+	border-radius: 0px 4px 4px 0px;
+}
+
+main > section > dialog > header ul li:first-of-type:last-of-type,
+main > section > dialog > footer ul li:first-of-type:last-of-type,
+main > section > header ul li:first-of-type:last-of-type,
+main > section > footer ul li:first-of-type:last-of-type {
+	border-radius: 4px 4px 4px 4px;
+}
+
+main > section > dialog > header ul li.active,
+main > section > dialog > footer ul li.active,
+main > section > header ul li.active,
+main > section > footer ul li.active {
+	color: var(--button-active-text);
+	background: var(--button-active-background);
+	border-color: var(--button-active-border);
+}
+

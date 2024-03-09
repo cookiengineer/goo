@@ -1,0 +1,45 @@
+
+body[data-layout="app"] > main > section > footer {
+	transition: 250ms transform ease-out;
+	transform: translate(0%, 100%);
+}
+
+body[data-layout="app"] > main > section.active > footer {
+	transition: 250ms transform ease-out;
+	transform: translate(0%, 0%);
+}
+
+body[data-layout="app"] > main > section.inactive > footer {
+	transition: 250ms transform ease-out;
+	transform: translate(0%, 100%);
+}
+
+body[data-layout="app"] > main > section > footer {
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	width: auto;
+	height: auto;
+	margin: 0px;
+	padding: 8px;
+	top: auto;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	text-align: center;
+	vertical-align: middle;
+	font: var(--menu-font);
+	color: var(--menu-text);
+	background: var(--menu-background);
+	border: 0px solid transparent;
+	border-bottom: 2px solid var(--menu-border);
+	border-radius: 0px;
+	user-select: none;
+	-webkit-user-select: none;
+	-webkit-app-region: drag;
+}
+
+body[data-layout="app"] > main > section > footer * {
+	-webkit-app-region: no-drag;
+}
+
